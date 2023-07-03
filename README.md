@@ -1,5 +1,6 @@
 # WEBSITE BÁN ĐỒ ĂN
 ## THÔNG TIN WEBSITE
+Website được xây dựng và quản lý trên nền tảng PHP - THUẦN với mô hình DAO. Bạn có thể update cũng như thêm sản phẩm và quản lý các đơn hàng hay bình luận thông qua website
 - USER:
 -- Có thể đặt được đồ ăn qua online
 -- Theo dõi được tình trạng đơn hàng
