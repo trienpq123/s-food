@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>CAKE HEALTHY</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="navbar .col-lg-12">
+                    <div class="navbar--menu">
+                        <ul  class="navbar--nav">
+                            <li><a href="#">TRANG CHỦ</a></li>
+                            <li><a href="#">SẢN PHẨM</a></li>
+                            <!-- <li><a href="#">SẢN PHẨM KHUYẾN MÃI</a></li> -->
+                            <li><a href="#">LIÊN HỆ</a></li>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="navbar--menu">
+                        <!-- <img src="image/Logo.png" alt="LOGO" style="width:100px;height:100px;"> -->
+                        <div class="navbar--logo"><a href="#">SFOOD</a></div>
+                    </div>
+                    
+                    <div class="navbar--menu">
+                        <div class="navbar--nav ">
+                            <div class=" navbar__menu--right navbar--search">
+                                <form action="" method="POST">
+                                    <label for="search"><i class="fas fa-search"></i></label>
+                                    <input type="text" id="search" placeholder="Tim kiem" class="search__product">
+                                    <input type="submit" hidden>
+                                </form>
+                            </div>
+    
+                            <div class="navbar__menu--right navbar--cart">
+                                <a href="#" >
+                                    <i class="fas fa-baby-carriage"></i>
+                                    <span>1</span>
+                                </a>
+                                <div class="cart__sub">
+                                    <div class="cart__sub--hidden">
+    
+                                    </div>
+                                    <div class="cart__sub--image">
+                                        <img src="image/product/banh_lava.jpeg" alt="Bánh Lava" style="width:40px;height:40px;">
+                                    </div>
+    
+                                    <div class="cart__sub--name">
+                                        <p>Bánh lava</p>
+                                        <p>1 cái</p>
+                                    </div>
+                                    <div class="cart__sub-total">
+                                        <p>Tổng</p>
+                                        <strong><span>150.000VNĐ</span></strong>
+                                    </div>
+    
+    
+                                 
+                                </div>
+                                
+                            </div>
+    
+                            <div class="navbar__menu--right navbar__menu--user">
+                                <i class="far fa-user"></i>
+    
+                                <div class="user__form">
+                                    <!-- <div class="form_hidden">
+                                        dsaads
+                                    </div> -->
+                                    <h3>LOGIN</h3>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="username">Email/sđt</label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <label for="password">Mật khẩu</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input type="checkbox" > <label for="">Ghi nhớ đăng nhập</label>
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-danger" value="Đăng nhập">
+                                            <label for="">
+                                                <div class="btn-forgetpass">
+                                                Quên mật khẩu
+                                                </div>
+                                            </label>
+    
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="">
+                                                <div class="signup--title" id="sigup--title">Đăng ký</div>
+    
+                                                <div class="over--lay" id="over--lay">
+                                                    <div class="form__signup">
+                                                        <div class="title--sign">
+                                                            <div class="title--name">ĐÂNG KÝ</div>
+                                                            <div class="title--close" id="sigup--close"><i class="fas fa-times"></i></div>
+                                                        </div>
+                                                        <form action="">
+                                                            <div class="form-group">
+                                                                <label for="">Họ tên</label>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+    
+                                                            <div class="form-group">
+                                                                <label for="">Số diện thoại</label>
+                                                                <input type="text" class="form-control">
+                                                                
+                                                            </div>
+    
+                                                            <div class="form-group">
+                                                                <label for="">Email</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+    
+                                                            <div class="form-group">
+                                                                <label for="">Mật khẩu</label>
+                                                                <input type="password" class="form-control">
+                                                            </div>
+    
+                                                            <div class="form-group">
+                                                                <label for="">Nhập lại mật khẩu</label>
+                                                                <input type="password" class="form-control">
+                                                            </div>
+    
+                                                            <div class="form-group">
+                                                                <label for="">Giới tính</label>
+                                                                <div class="form-control">
+                                                                    <input type="radio" name="gender" value="0"> <label for="">Nam</label>
+                                                                    <input type="radio" name="gender" value="1"> <label for="">Nữ</label>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button class="btn btn-primary">Đăng ký</button>
+                                                            
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <div class="container">
+        <div class="banner__real">
+
+  
+           
+
+            
+            <div class="col-lg-8">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/product/banner_1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/product/banh_lava.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                  
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+
+
+            
+ 
+            <div class="col-lg-4">
+                <div class="banner__left">
+                    <div class="col-lg-12">
+                        <div class="banner__left--top">
+                            <img src="image/product/banner_3.PNG" alt="" style="width: 100%; height: 230px; object-fit: cover; object-position: center;">
+                        </div>
+    
+                        <div class="banner__left--bottom">
+                            <img src="image/product/banner_2.jpg" alt="" style="width: 100%; height: 230px; object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                </div> 
+    
+            </div>
+        </div>
+    </div>
+   
+
+    <main>
+
+        <div class="container">
+
+            <div class="product col-lg-12">
+             
+                <h3><i class="fas fa-pizza-slice"></i> Sản phẩm bán chạy</h3>
+               
+          
+                <div class="product__title">
+                   
+                    <div class="product__title--name">
+                        Giam giá <span>(67 SẢN PHẨM )</span>
+                    </div>
+                    <div class="product__title--more">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                
+              
+                    <div class="product__list">
+                        <div class="product__list--item col-lg-3">
+                          
+                                <div class="product--image">
+                                    <img src="image/product/FL.jpeg" alt="Món An" style="width:100%;height:100%">
+                                    <div class="product--add">
+                                       <a href="#">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="product--name">
+                                        [FL] Măng Mạnh Tông Tươi Hữu Cơ
+                                    </div>
+                                </a>
+                           
+                                <div class="product__box">
+                                        <div class="product__price">
+                                            <div class="product__price--old">19,000&nbsp;&nbsp;</div>
+                                            <span class="product__price--sale">9,000&nbsp;&nbsp;</span>
+                                        </div>
+            
+                                        <div class="product__sale">
+                                            -18%
+                                        </div>
+                                </div>
+    
+                        </div>
+
+                        
+
+                        
+                        
+               
+    
+                    </div>
+             
+                
+            </div>
+
+            <hr>
+
+            <div class="product">
+             
+                <h3><i class="fas fa-pizza-slice"></i> Sản phẩm khuyến mãi</h3>
+               
+          
+                <div class="product__title">
+                   
+                    <div class="product__title--name">
+                        Giam giá <span>(67 SẢN PHẨM )</span>
+                    </div>
+                    <div class="product__title--more">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="product__list">
+                        <div class="product__list--item">
+                          
+                                <div class="product--image">
+                                    <img src="image/product/FL.jpeg" alt="Món An" style="width:100%;height:100%">
+                                    <div class="product--add">
+                                       <a href="#">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            <a href="#">
+                                <div class="product--name">
+                                    [FL] Măng Mạnh Tông Tươi Hữu Cơ
+                                </div>
+                           </a>
+                           
+                           <div class="product__box">
+                                <div class="product__price">
+                                    <div class="product__price--old">19,000&nbsp;&nbsp;</div>
+                                    <span class="product__price--sale">9,000&nbsp;&nbsp;</span>
+                                </div>
+    
+                                <div class="product__sale">
+                                    -18%
+                                </div>
+                           </div>
+    
+                        </div>
+    
+               
+    
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="flash--sale">
+                <img src="image/banner_shipper.jpg" alt="">
+            </div>
+
+       
+            <div class="product">
+             
+                <h3><i class="fas fa-pizza-slice"></i> Sản phẩm HOT</h3>
+               
+          
+                <div class="product__title">
+                   
+                    <div class="product__title--name">
+                        Giam giá <span>(67 SẢN PHẨM )</span>
+                    </div>
+                    <div class="product__title--more">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="product__list">
+                        <div class="product__list--item">
+                          
+                                <div class="product--image">
+                                    <img src="image/product/FL.jpeg" alt="Món An" style="width:100%;height:100%">
+                                    <div class="product--add">
+                                       <a href="#">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            <a href="#">
+                                <div class="product--name">
+                                    [FL] Măng Mạnh Tông Tươi Hữu Cơ
+                                </div>
+                           </a>
+                           
+                           <div class="product__box">
+                                <div class="product__price">
+                                    <div class="product__price--old">19,000&nbsp;&nbsp;</div>
+                                    <span class="product__price--sale">9,000&nbsp;&nbsp;</span>
+                                </div>
+    
+                                <div class="product__sale">
+                                    -18%
+                                </div>
+                           </div>
+
+                           <div class="product--hot">HOT</div>
+    
+                        </div>
+                        
+
+                        <!-- DISPLAY GRID  -->
+               
+    
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+
+            
+
+
+        </div>
+
+        
+        <section class="infor--more">
+           
+
+            <div class="container">
+
+                <div class="infor__store">
+                    <div class="col-lg-4">
+                        <div class="infor__store--item">
+                            <div class="infor__store--image">
+                                <img src="image/iconl/fast_ship.jpg" alt="ICONL SHIPPER" style="width:70px;height:70px;">
+                            </div>
+                            <div class="infor__store--content">
+                                <p><strong>Giao hàng miễn phí</strong></p>
+       
+                                <p>Với các đơn hàng từ 100.000đ trở lên</p>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="col-lg-4">
+                        <div class="infor__store--item">
+                            <div class="infor__store--image">
+                                <img src="image/iconl/Shiled.png" alt="ICONL SHIPPER" style="width:70px;height:70px;object-fit: contain;">
+                            </div>
+                            <div class="infor__store--content">
+                                <p><strong>Phục vụ giao hàng 24/7</strong></p>
+    
+                                <p>8h00 AM -  22h30 PM tất cả các ngày trong tuần</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="infor__store--item">
+                            <div class="infor__store--image">
+                                <img src="image/iconl/tea.png" alt="ICONL SHIPPER" style="width:70px;height:70px;object-fit: contain;">
+                            </div>
+                            <div class="infor__store--content">
+                                <p><strong>Đồ uống đa dạng</strong></p>
+    
+                                <p>Matcha,trà đào,sinh tố...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            
+        </section>
+
+    </main>
+
+    <footer class="footer">
+       <div class="container">
+            <div class=" footer__top  col-lg-12">
+                <div class="col-lg-3">
+                    <div class="footer__name">
+                        Về chúng tôi
+                    </div>
+
+                    <div class="footer__link">
+                       <ul class="footer__link--a">
+                           <li><a href="#">Giới Thiệu</a></li>
+                           <li><a href="#">Liên hệ</a></li>
+                           <li><a href="#">Thức ăn nhanh</a></li>
+                           <li><a href="#">CALL</a></li>
+                       </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer__name">
+                        Chính sách
+                    </div>
+
+                    <div class="footer__link">
+                       <ul class="footer__link--a">
+                           <li><a href="#">Chính sách bảo mật</a></li>
+                           <li><a href="#">Quy định sử dụng</a></li>
+                           <li><a href="#">Giải quyết khiếu nại</a></li>
+                           <li><a href="#">Chính sách thanh toán</a></li>
+                       </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 box--contact">
+                    <div class="footer__box">
+                        <label for="" >Email của bạn</label> <br>
+                        <span style="font-size:12px">Nhập Email của bạn tại đây để nhận thông tin mới nhất từ SFOOD</span>
+                       <div class="footer__box--contact">
+                        <input type="email" placeholder="Nhập email của bạn" class="contact--email" >
+                  
+                        <input type="submit" class="btn btn-danger"> 
+                        
+                       </div>
+                    </div>
+                    <div class="footer__iconl">
+                        <div><a href="#"><img src="image/iconl/iconl_facebook.png" alt="Facebook ICONL"></a></div>
+                        <div><a href="#"><img src="image/iconl/zalo.png" alt="Zalo"></a></div>
+                        <div><a href="#"><img src="image/iconl/instagram.png" alt="Facebook ICONL"></a></div>
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__gov">
+                        <img src="image/giayphep.jpg" alt="Giay61 phep" style="width: 200px;;object-fit: contain;">
+                </div>
+                <div class="footer__content">
+                    <h3>CITYFOOD.COM</h3>
+                    <p>Công Ty Cổ Phần SFoody, Lầu G, Tòa nhà Jabes 1, 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TP.HCM</p>
+                    <p>Điện thoại: 1900 2042 </p>
+                    <p>Email: info@sfoody.vn</p>
+
+                </div>
+
+                <hr>
+
+                <div class="footer__copyright">
+                    <div class="footer__copyright--left">
+                        Copyright © 2021 SFOOD. Powered by SFOOD.
+                    </div>
+
+                    <div class="footer__copyright--right">
+                        <img src="image/iconl/payment-logo.png" alt="PAYMENT">
+                    </div>
+                </div>
+            </div>
+       </div>
+    </footer>
+
+    
+
+
+    <script src="javascript/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+                $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop:true,
+                    margin:4,
+                    nav:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                 });
+                });
+
+
+                // $(document).ready(function(){
+                //     $(".signup--title").toggle({
+                //         $("")
+                //     });
+                // });
+    </script>
+</body>
+</html>
